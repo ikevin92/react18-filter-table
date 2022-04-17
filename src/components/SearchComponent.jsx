@@ -4,7 +4,6 @@ const SearchComponent = () => {
   //use id
   const id = useId();
 
-
   //setear los hooks usestate
   const [users, setUsers] = useState([]);
   const [search, setSearch] = useState('');
