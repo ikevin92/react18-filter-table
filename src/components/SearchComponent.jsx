@@ -2,8 +2,8 @@ import { useState, useEffect, useId } from 'react';
 
 const SearchComponent = () => {
   //use id
-  const inputId = useId();
-  const tableId = useId();
+  const id = useId();
+
 
   //setear los hooks usestate
   const [users, setUsers] = useState([]);
@@ -57,10 +57,10 @@ const SearchComponent = () => {
         value={search}
         onChange={searcher}
         name='search'
-        id={inputId}
+        id={`${id}-input`}
       />
       <table
-        id={tableId}
+        id={`${id}-table`}
         className='table table-striped table-hover mt-5 shadow-lg'>
         <thead>
           <tr className='bg-curso text-white'>
